@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE573228"
+    android:contextClickable="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="170dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/logo_title"
+        android:tag="Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView_logo"
+        android:layout_width="108dp"
+        android:layout_height="33dp"
+        android:fontFamily="casual"
+        android:text="ABC Safari"
+        android:textColor="#D1B917"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <ImageView
+        android:id="@+id/imgNumbersActivity"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="69dp"
+        android:onClick="onImageSelected"
+        android:tag="Numbers"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        tools:srcCompat="@drawable/numberslandingimage" />
+
+    <ImageView
+        android:id="@+id/imgShapesActivity"
+        android:layout_width="125dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="93dp"
+        android:onClick="onImageSelected"
+        android:tag="Shapes"
+        app:layout_constraintStart_toEndOf="@+id/imgReadingActivity"
+        app:layout_constraintTop_toBottomOf="@+id/imgNumbersActivity"
+        tools:srcCompat="@drawable/shapeslandingimage" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:fontFamily="casual"
+        android:text="@string/shapesActivity"
+        android:textColor="#D1B917"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imgShapesActivity"
+        app:layout_constraintTop_toBottomOf="@+id/imgNumbersActivity" />
+
+    <ImageView
+        android:id="@+id/imgReadingActivity"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="94dp"
+        android:onClick="onImageSelected"
+        android:tag="Reading"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/imgAlphabetActivity"
+        tools:srcCompat="@drawable/readinglandingimage" />
+
+    <ImageView
+        android:id="@+id/imgAlphabetActivity"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="101dp"
+        android:onClick="onImageSelected"
+        android:tag="Alphabet"
+        app:layout_constraintEnd_toStartOf="@+id/imgNumbersActivity"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        tools:srcCompat="@drawable/alphabetlandingimage" />
+
+    <TextView
+        android:id="@+id/textView_alphabetActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="@string/alphabetActivity"
+        android:textColor="#D1B917"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="67dp"
+        android:fontFamily="casual"
+        android:text="@string/readingActivity"
+        android:textColor="#D1B917"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAlphabetActivity" />
+
+    <TextView
+        android:id="@+id/textView_NumbersActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:fontFamily="casual"
+        android:text="@string/numbersActivity"
+        android:textColor="#D1B917"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">ABCSafari</string>
+    <string name="logo_title">ABC Safari</string>
+    <string name="back">Back to Home</string>
+    <string name="submit">All Done</string>
+
+    <string name="alphabet">Alphabet</string>
+    <string name="numbers">Numbers</string>
+    <string name="shapes">Shapes</string>
+    <string name="reading">Reading</string>
+
+
+    <string name="numberPrompt">Which Number is This?</string>
+    <string name="numbersActivity">Numbers Activity</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+
+    <string name="alphabetActivity">Alphabet Activity</string>
+    <string name="alphabetBody">The Letter is: </string>
+    <string name="alphabetPrompt">Try Spelling Here!</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+
+    <string-array name="alphabet_descriptions">
+        <item>Alligators are green and scaly.</item>
+        <item>Bears like honey and live in the woods.</item>
+        <item>Cats like to play with yarn and take catnaps.</item>
+        <item>Dolphins love to swim in the ocean.</item>
+    </string-array>
+
+    <string-array name="alphabet_questions">
+        <item>Alligator</item>
+        <item>Bear</item>
+        <item>Cat</item>
+        <item>Dolphin</item>
+    </string-array>
+
+    <string name="shapesActivity">Shapes Activity</string>
+    <string name="square">This is a Square</string>
+    <string name="circle">This is a Circle</string>
+    <string name="triangle">This is a Triangle</string>
+    <string name="rhombus">This is a Rhombus</string>
+    <string name="shapesPrompt">Which shape do you see?</string>
+
+    <string name="readingActivity">Reading Activity</string>
+    <string name="readingStory1">A fluffy bunny hopping through the tall, green grass.</string>
+    <string name="readingStory2">Emma and John build a sandcastle on the beach.</string>
+    <string name="readingStory3">Daisy the Duck waddled by the sparkling pond with her ducklings.</string>
+    <string name="readingStory4">Sarah opened her umbrella, and suddenly saw magical colors.</string>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackground"
+    tools:context=".ReadingActivity">
+
+    <ImageView
+        android:id="@+id/imgReading"
+        android:layout_width="0dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReadingHeader" />
+
+    <TextView
+        android:id="@+id/txtReadingHeader"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="casual"
+        android:text="@string/readingActivity"
+        android:textAlignment="center"
+        android:textColor="@color/primaryText"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icReadingNext"
+        android:layout_width="105dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toEndOf="@+id/icReadingPrev"
+        app:layout_constraintTop_toBottomOf="@+id/txtReadingPrompt"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageView
+        android:id="@+id/icReadingPrev"
+        android:layout_width="121dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReadingPrompt"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/txtReadingPrompt"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="29dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReading" />
+
+    <Button
+        android:id="@+id/btnReadingBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="casual"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

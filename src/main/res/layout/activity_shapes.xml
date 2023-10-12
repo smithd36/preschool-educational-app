@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackground"
+    tools:context=".ShapesActivity">
+
+    <ImageView
+        android:id="@+id/imgShapes"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtShapesPrompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/square" />
+
+    <TextView
+        android:id="@+id/txtShapesPrompt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="casual"
+        android:text="test"
+        android:textAlignment="center"
+        android:textColor="@color/primaryText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/icShapesNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgShapes" />
+
+    <ImageView
+        android:id="@+id/icShapesNext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="95dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnShapesBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icShapesPrev"
+        app:layout_constraintTop_toBottomOf="@+id/txtShapesPrompt"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageView
+        android:id="@+id/icShapesPrev"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/icShapesNext"
+        app:layout_constraintEnd_toStartOf="@+id/icShapesNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShapesPrompt"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <Button
+        android:id="@+id/btnShapesBack"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="casual"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icShapesNext" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="casual"
+        android:text="@string/shapesActivity"
+        android:textColor="@color/primaryText"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgShapes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
